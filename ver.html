@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>TMAPP Home</title>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Logo.png" alt="Logo" style="width:30px;" class="rounded-pill">
+                        <span class="navbar-text">Task Management App</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse split" id="collapsibleNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Ver</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="crear.html">Crear</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="listar.html">Listar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"  href="login.html">LogIn</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registro.html">Registro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Agregar enlaces a las otras páginas -->
+        <a href="index.html" class="btn btn-primary mt-3">Volver a la Página de Inicio</a>
+        <a href="crear.html" class="btn btn-primary mt-3">Crear Nueva Tarea</a>
+        <div class="container mt-5">
+        <!-- Detalles de la tarea seleccionada -->
+        <h1>Detalle de Tarea</h1>
+        
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Título de la Tarea</h5>
+                <p class="card-text">Descripción detallada de la tarea.</p>
+                <p class="card-text">Fecha de Vencimiento: 01/01/2024</p>
+                <p class="card-text">Prioridad: Alta</p>
+                <a href="#" class="btn btn-primary">Adjuntar Archivo</a>
+            </div>
+        </div>
+        
+        <!-- Botón para agregar un comentario -->
+        <button class="btn btn-success mt-3">Agregar Comentario</button>
+        
+        <!-- Lista de tareas relacionadas -->
+        <h3 class="mt-4">Tareas Relacionadas</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Tarea relacionada 1</li>
+            <li class="list-group-item">Tarea relacionada 2</li>
+            <li class="list-group-item">Tarea relacionada 3</li>
+        </ul>
+        
+        <!-- Opciones para exportar la tarea o compartirla -->
+        <div class="mt-4">
+            <button class="btn btn-info">Exportar Tarea</button>
+            <button class="btn btn-warning">Compartir Tarea</button>
+        </div>
+        
+        <!-- Enlace para volver a la página de inicio -->
+        <a href="index.html" class="btn btn-secondary mt-3">Volver a la Página de Inicio</a>
+        </div>
+    
+    <!-- Enlace a Bootstrap JS y jQuery (si es necesario) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    <footer>
+        <span class="signature">Developed by: Carlos Franco</span>
+    </footer>
+</html>

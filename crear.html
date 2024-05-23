@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>TMAPP Home</title>
+  </head>
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Logo.png" alt="Logo" style="width:30px;" class="rounded-pill">
+                    <span class="navbar-text">Task Management App</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse split" id="collapsibleNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ver.html">Ver</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Crear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listar.html">Listar</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="login.html">LogIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registro.html">Registro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </div>
+    <!-- Agregar enlaces a las otras páginas -->
+    <a href="index.html" class="btn btn-primary mt-3">Volver a la Página de Inicio</a>
+    <a href="ver.html" class="btn btn-primary mt-3">Ver Tarea Detallada</a>
+    <div class="container mt-5">
+        <!-- Formulario para crear una nueva tarea -->
+        <h1>Crear Nueva Tarea</h1>
+        <form>
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" placeholder="Título de la tarea" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea class="form-control" id="descripcion" rows="4" placeholder="Descripción detallada de la tarea"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha">Fecha de Vencimiento:</label>
+                <input type="date" class="form-control" id="fecha">
+            </div>
+            
+            <div class="form-group">
+                <label for="prioridad">Prioridad:</label>
+                <select class="form-control" id="prioridad">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="adjunto">Adjuntar Archivos:</label>
+                <input type="file" class="form-control-file" id="adjunto">
+            </div>
+            
+            <div class="form-group">
+                <label for="categorias">Categorías:</label>
+                <select class="form-control" id="categorias">
+                    <!-- Opciones de categorías sugeridas basadas en tareas existentes -->
+                    <option value="trabajo">Trabajo</option>
+                    <option value="personal">Personal</option>
+                    <!-- Agrega más opciones aquí -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="etiquetas">Etiquetas:</label>
+                <input type="text" class="form-control" id="etiquetas" placeholder="Agrega etiquetas separadas por comas">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Guardar Tarea</button>
+        </form>
+        
+        <!-- Enlace para volver a la página de inicio -->
+        <a href="index.html" class="btn btn-primary mt-3">Volver a la Página de Inicio</a>
+    </div>
+    
+    <!-- Enlace a Bootstrap JS y jQuery (si es necesario) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+  <footer>
+    <span class="signature">Developed by: Carlos Franco</span>
+  </footer>
+</html>
